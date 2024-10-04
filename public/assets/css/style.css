@@ -2002,6 +2002,52 @@ button.ltr {
 }
 
 
+ /* Styles personnalisés pour les dropdowns */
+    .form-select.custom-select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        background-color: #f8f9fa;
+        font-size: 1rem;
+        transition: border-color 0.3s, background-color 0.3s;
+    }
+
+    .form-select.custom-select:focus {
+        border-color: #007bff;
+        outline: none;
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+        background-color: #fff;
+        /* Changer la couleur de fond au focus */
+    }
+
+    .form-label {
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: #333;
+    }
+
+    .drop-area.active {
+        border-color: #0056b3;
+        /* Change la couleur de la bordure au survol */
+        background-color: #e0f7fa;
+        /* Change la couleur de fond au survol */
+    }
+
+    .drop-area {
+        transition: background-color 0.3s;
+    }
+
+    .message-btn button:hover {
+        background-color: #218838;
+        /* Couleur plus foncée au survol */
+    }
+
+    /* Styles pour les boutons */
+    .button {
+        cursor: pointer;
+    }
+
 
 
 

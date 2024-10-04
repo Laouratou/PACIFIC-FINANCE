@@ -179,3 +179,4 @@
     </div>
 </section>
 <!-- career-section end -->
+@include('partials.footer')

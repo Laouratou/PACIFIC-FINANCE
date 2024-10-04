@@ -239,37 +239,7 @@
 </section>
 <!-- faq-section end -->
 
-  <!-- faq-form-section -->
-        <section class="faq-form-section pt_80 pb_80">
-            <div class="auto-container">
-                <div class="sec-title mb_70 centred">
-                    {{-- <h6>Asked Question</h6> --}}
-                    <h2>Informations sur le demandeur</h2>
-                </div>
-                <div class="form-inner">
-                    <form method="post" action="faq.html">
-                        <div class="row clearfix">
-                            <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                                <input type="text" name="name" placeholder="Your name" required>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                                <input type="email" name="email" placeholder="Your email" required>
-                            </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                                <input type="text" name="phone" placeholder="Phone number" required>
-                            </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                                <textarea name="message" placeholder="Type message"></textarea>
-                            </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 form-group message-btn centred">
-                                <button type="submit" class="theme-btn btn-one">Send Message</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </section>
-        <!-- faq-form-section end -->
+ @include('partials.contact')
 
 
 

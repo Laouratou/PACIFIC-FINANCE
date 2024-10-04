@@ -6,6 +6,8 @@ use App\Http\Controllers\CreditController;
 use App\Http\Controllers\WelcomeController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\VideoController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\FileController;
 
 Route::get('/', [WelcomeController::class, 'index']);
 
@@ -75,3 +77,13 @@ Route::get('/admin/news', [NewsController::class, 'index_admin'])->name('news.in
 
 
 Route::resource('videos', VideoController::class);
+
+
+
+// Routes pour le ContactController
+Route::get('contacts', [ContactController::class, 'index'])->name('contacts.index');
+Route::post('contacts', [ContactController::class, 'store'])->name('contact.store');
+// Ajoutez d'autres routes si nécessaire
+
+
+Route::get('/files/{path}', [FileController::class, 'show'])->name('files.show');

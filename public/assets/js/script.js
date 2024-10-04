@@ -735,3 +735,52 @@ window.addEventListener('scroll', handleScroll);
 // Vérifier la position des images lors du chargement de la page
 document.addEventListener('DOMContentLoaded', handleScroll);
 
+document.getElementById('whatsapp-submit').addEventListener('click', function() {
+	var phone = "22661838114"; // Numéro WhatsApp
+	var message = "Bonjour, je souhaite être contacté via WhatsApp."; // Message prédéfini
+	var whatsappUrl = "https://api.whatsapp.com/send?phone=" + phone + "&text=" + encodeURIComponent(message); // URL modifiée
+
+	// Ouvre WhatsApp dans un nouvel onglet
+	window.open(whatsappUrl, '_blank');
+});
+
+  // Script pour gérer le drag and drop et la sélection de fichiers
+    document.querySelectorAll('.drop-area').forEach(dropArea => {
+        const input = dropArea.querySelector('input[type="file"]');
+        const fileNameDisplay = dropArea.querySelector('.file-name');
+
+        // Gestion du drag and drop
+        dropArea.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            dropArea.classList.add('active');
+        });
+
+        dropArea.addEventListener('dragleave', () => {
+            dropArea.classList.remove('active');
+        });
+
+        dropArea.addEventListener('drop', (e) => {
+            e.preventDefault();
+            dropArea.classList.remove('active');
+            const files = e.dataTransfer.files;
+            handleFiles(files);
+        });
+
+        // Gestion de la sélection de fichiers via le bouton
+        dropArea.querySelector('.select-files').addEventListener('click', () => {
+            input.click();
+        });
+
+        input.addEventListener('change', (e) => {
+            handleFiles(input.files);
+        });
+
+        function handleFiles(files) {
+            if (files.length > 0) {
+                const fileName = files[0].name; // Récupérer le nom du fichier
+                fileNameDisplay.textContent = fileName; // Afficher le nom du fichier
+            } else {
+                fileNameDisplay.textContent = ''; // Réinitialiser si aucun fichier n'est sélectionné
+            }
+        }
+    });

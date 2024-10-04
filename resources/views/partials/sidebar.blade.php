@@ -34,14 +34,14 @@
                 <li class="submenu">
                     <a href="javascript:void(0);"><img src="{{ asset('img/icons/places.svg') }}" alt="img"><span> Demande de credit ou de prêts</span> <span class="menu-arrow"></span></a>
                     <ul>
-                        <li><a href="newcountry.html">Voir les demandes</a></li>
+                        <li><a href="{{ route('contacts.index') }}">Voir les demandes</a></li>
                         {{-- <li><a href="countrieslist.html">Countries List</a></li>
                         <li><a href="newstate.html">New State</a></li>
                         <li><a href="statelist.html">State List</a></li> --}}
                     </ul>
                 </li>
                 <li>
-                    <a href="components.html"><i data-feather="layers"></i><span> Components</span></a>
+                    <a href="{{ route('contacts.index') }}"><i data-feather="layers"></i><span> Components</span></a>
                 </li>
                 <li>
                     <a href="blankpage.html"><i data-feather="file"></i><span> Blank Page</span></a>
