@@ -1,8 +1,9 @@
 @extends('layouts.app_admin')
 <!-- Assurez-vous d'utiliser le bon layout -->
+@section('content')
 @include('partials.header_admin')
 @include('partials.sidebar')
-@section('content')
+
 <div class="page-wrapper">
     <div class="content">
         <div class="page-header">

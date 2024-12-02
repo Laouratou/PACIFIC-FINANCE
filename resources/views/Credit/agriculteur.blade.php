@@ -78,7 +78,7 @@
                         <div class="col-lg-6 col-md-12 col-sm-12 image-column">
                             <div class="image-box ml_40">
                                 <div class="image-shape" style="background-image: url(assets/images/shape/shape-3.png);"></div>
-                                <figure class="image"><img src="assets/images/service/service-1.jpg" alt=""style="width:400px;height:400px;object-fit:cover;"></figure>
+                                <figure class="image"><img src="assets/images/resource/49789.jpg" alt=""style="width:400px;height:400px;object-fit:cover;"></figure>
                             </div>
                         </div>
                     </div>
@@ -104,7 +104,7 @@
                         <div class="col-lg-6 col-md-12 col-sm-12 image-column">
                             <div class="image-box ml_40">
                                 <div class="image-shape" style="background-image: url(assets/images/shape/shape-3.png);"></div>
-                                <figure class="image"><img src="assets/images/service/service-2.jpg" alt=""style="width:400px;height:400px;object-fit:cover;"></figure>
+                                <figure class="image"><img src="assets/images/resource/conditions (2).jpg" alt=""style="width:400px;height:400px;object-fit:cover;"></figure>
                             </div>
                         </div>
                     </div>
@@ -130,7 +130,7 @@
                         <div class="col-lg-6 col-md-12 col-sm-12 image-column">
                             <div class="image-box ml_40">
                                 <div class="image-shape" style="background-image: url(assets/images/shape/shape-3.png);"></div>
-                                <figure class="image"><img src="assets/images/service/service-3.jpg" alt=""style="width:400px;height:400px;object-fit:cover;"></figure>
+                                <figure class="image"><img src="assets/images/resource/Laouratou.jpg" alt=""style="width:400px;height:400px;object-fit:cover;"></figure>
                             </div>
                         </div>
                     </div>

@@ -7,8 +7,11 @@ use App\Http\Controllers\WelcomeController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\VideoController;
 use App\Http\Controllers\ContactController;
-use App\Http\Controllers\FileController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\Auth\LoginController;
 
+use App\Http\Controllers\FileController;
 Route::get('/', [WelcomeController::class, 'index']);
 
 
@@ -87,3 +90,19 @@ Route::post('contacts', [ContactController::class, 'store'])->name('contact.stor
 
 
 Route::get('/files/{path}', [FileController::class, 'show'])->name('files.show');
+Route::prefix('users')->group(function () {
+    Route::get('/', [UserController::class, 'index'])->name('users.index');
+    Route::get('/create', [UserController::class, 'create'])->name('users.create');
+    Route::post('/', [UserController::class, 'store'])->name('users.store');
+    Route::delete('/{user}', [UserController::class, 'destroy'])->name('users.destroy');
+});
+
+
+
+Route::get('/register', [RegisterController::class, 'create'])->name('register.create');
+Route::post('/register', [RegisterController::class, 'store'])->name('register.store');
+
+
+Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
+Route::post('/login', [LoginController::class, 'login']);
+Route::post('/logout', [LoginController::class, 'logout'])->name('logout');

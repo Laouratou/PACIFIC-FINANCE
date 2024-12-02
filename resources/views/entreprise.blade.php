@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+@section('content')
 <div class="boxed_wrapper ltr">
 
 
@@ -551,3 +551,4 @@
 
 
 @include('partials.footer')
+@endsection

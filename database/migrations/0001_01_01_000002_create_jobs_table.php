@@ -1,5 +1,4 @@
 <?php
-
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -11,9 +10,10 @@ return new class extends Migration
      */
     public function up(): void
     {
+        // Limiter la longueur de 'queue' à 191 caractères pour l'index
         Schema::create('jobs', function (Blueprint $table) {
             $table->id();
-            $table->string('queue')->index();
+            $table->string('queue', 191)->index(); // Limité à 191 caractères
             $table->longText('payload');
             $table->unsignedTinyInteger('attempts');
             $table->unsignedInteger('reserved_at')->nullable();
@@ -21,8 +21,9 @@ return new class extends Migration
             $table->unsignedInteger('created_at');
         });
 
+        // Limiter la longueur de 'id' à 191 caractères pour la clé primaire
         Schema::create('job_batches', function (Blueprint $table) {
-            $table->string('id')->primary();
+            $table->string('id', 191)->primary(); // Limité à 191 caractères
             $table->string('name');
             $table->integer('total_jobs');
             $table->integer('pending_jobs');
@@ -34,9 +35,10 @@ return new class extends Migration
             $table->integer('finished_at')->nullable();
         });
 
+        // UUID limité à 191 caractères pour l'unicité
         Schema::create('failed_jobs', function (Blueprint $table) {
             $table->id();
-            $table->string('uuid')->unique();
+            $table->string('uuid', 191)->unique(); // Limité à 191 caractères
             $table->text('connection');
             $table->text('queue');
             $table->longText('payload');

@@ -136,7 +136,7 @@
                                 <li class="dropdown"><a href="index.html">Présentations</a>
                                     <ul>
                                         <li><a href="service.html">Mot du DIRECTEUR GENERAL</a></li>
-                                        <li><a href="service-2.html">Qui sommes nous ?</a></li>
+                                      
                                         <li><a href="service-details.html">Nos agences</a></li>
                                         {{-- <li><a href="service-details-2.html">Mobile & Web Banking</a></li>
                                         <li><a href="service-details-3.html">Insurance Policies</a></li>
@@ -158,8 +158,9 @@
                     </nav>
 
                     <div class="menu-right-content ml_70">
-                        <a href="index.html" class="theme-btn btn-two mr_20">Se connecter</a>
-                        <a href="index.html" class="theme-btn btn-one">Se créer un compte</a>
+                        <a href="{{ route('login') }}" class="theme-btn btn-two mr_20">Se connecter</a>
+                        <a href="{{ route('register.create') }}" class="theme-btn btn-one">Se créer un compte</a>
+
                     </div>
                 </div>
             </div>

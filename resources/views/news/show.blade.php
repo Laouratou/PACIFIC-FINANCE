@@ -11,7 +11,7 @@
             <div class="col-lg-9 col-md-12 col-sm-12">
                 <!-- Image section -->
                 <div class="image-section mb-4">
-                    <img src="{{ asset('storage/' . $news->image) }}" alt="{{ $news->title }}" class="img-fluid rounded" style="object-fit:cover; max-height: 900px; width: 100%;">
+                    <img src="{{ asset('storage/' . $news->image) }}" alt="{{ $news->title }}" class="img-fluid rounded" style="object-fit:cover; max-height: 900px;">
                 </div>
                 <!-- Content section -->
                 <div class="content-section">

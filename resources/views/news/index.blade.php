@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('content')
 @include('partials.header')
 
 <!-- page-title -->
@@ -62,3 +63,4 @@
 </section>
   @include('partials.footer')
 <!-- news-style-two end -->
+@endsection

@@ -9,7 +9,7 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-    public function up()
+    public function up(): void
     {
         Schema::create('news', function (Blueprint $table) {
             $table->id();
@@ -17,7 +17,8 @@ return new class extends Migration
             $table->text('content');
             $table->string('image')->nullable();
             $table->date('publish_date');
-            $table->string('slug')->unique();
+            // Limiter la longueur du slug à 191 caractères pour éviter les erreurs de clé unique
+            $table->string('slug', 191)->unique();
             $table->timestamps();
         });
     }
@@ -30,3 +31,4 @@ return new class extends Migration
         Schema::dropIfExists('news');
     }
 };
+

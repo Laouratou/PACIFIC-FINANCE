@@ -1,7 +1,8 @@
 @extends('layouts.app_admin')
+@section('content')
 @include('partials.header_admin')
 @include('partials.sidebar')
-@section('content')
+
 <div class="page-wrapper">
     <div class="content">
         <div class="page-header">

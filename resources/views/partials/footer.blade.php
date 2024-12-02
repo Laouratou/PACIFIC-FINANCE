@@ -53,32 +53,25 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
-                    <div class="footer-widget contact-widget">
-                        <div class="widget-title">
-                            <h4>Trouvez notre succursale et notre guichet automatique</h4>
-                        </div>
-                        <div class="form-inner">
-                            <form method="post" action="index.html">
-                                <div class="form-group">
-                                    <div class="select-box">
-                                        <select class="wide">
-                                           <option data-display="Branch">Branch</option>
-                                           <option value="1">California</option>
-                                           <option value="2">Man City</option>
-                                           <option value="3">New York</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" name="location" placeholder="Location">
-                                </div>
-                                <div class="form-group">
-                                    <button type="submit" class="theme-btn btn-one">Trouvez sur google maps</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
+    <div class="footer-widget contact-widget">
+        <div class="widget-title">
+            <h4>Inscrivez-vous à notre newsletter</h4>
+        </div>
+        <div class="form-inner">
+            <form method="post" action="newsletter-subscribe.html">
+                <!-- Champ pour entrer l'email -->
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Votre adresse e-mail" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;color:white;">
                 </div>
+                <!-- Bouton pour s'abonner -->
+                <div class="form-group">
+                    <button type="submit" class="theme-btn btn-one" style="padding: 8px 15px; font-size: 14px;">S'inscrire</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
             </div>
         </div>
     </div>

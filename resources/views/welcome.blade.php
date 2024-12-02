@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 
-
+@section('content')
 
 <!-- page-direction -->
 <div class="page_direction">
@@ -719,3 +719,4 @@
 </script>
 
 
+@endsection
