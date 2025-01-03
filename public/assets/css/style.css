@@ -974,7 +974,7 @@ img {
 .main-menu .navigation > li > .megamenu li > a{
   position:relative;
   display:block;
-  padding: 10px 25px;
+  padding: 14px 44px;
   line-height:24px;
   font-weight:600;
   font-size:16px;
@@ -2037,6 +2037,38 @@ button.ltr {
 
 
 
+ /* Styles personnalisés */
+ .bg-custom {
+  background-color: #2C6EA8;
+}
+.text-custom {
+  color: #2C6EA8;
+}
+.card-custom {
+  border-color: #2C6EA8;
+}
+.btn-custom {
+  background-color: #2C6EA8;
+  color: #fff;
+}
+.btn-custom:hover {
+  background-color: #235a8a;
+}
+
+/* Définition de l'animation Bounce */
+@keyframes bounce {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px);
+  }
+}
+
+/* Appliquer l'animation au survol */
+.bounce-hover:hover {
+  animation: bounce 0.5s ease;
+}
 
 
 

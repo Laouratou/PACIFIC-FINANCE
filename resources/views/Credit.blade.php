@@ -1,4 +1,6 @@
 @extends('layouts.app')
+
+@section('content')
 @include('partials.header')
 
 <section class="about-style-two ">
@@ -9,7 +11,7 @@
                     <div class="content-box mr_110">
                         <div class="sec-title mb_20">
                             <h6 class="title-with-underscore">
-                                Particuliers
+                                Nos produits
                                 <span class="underscore"></span>
                             </h6>
                         </div>
@@ -180,3 +182,4 @@
 </section>
 <!-- career-section end -->
 @include('partials.footer')
+@endsection

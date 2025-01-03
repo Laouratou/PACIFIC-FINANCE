@@ -10,8 +10,13 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\Auth\LoginController;
-
+use App\Http\Controllers\MissionController;
 use App\Http\Controllers\FileController;
+use App\Http\Controllers\ValueController;
+use App\Http\Controllers\DepotController;
+use App\Http\Controllers\EpargneController;
+use App\Http\Controllers\LogementController;
+
 Route::get('/', [WelcomeController::class, 'index']);
 
 
@@ -36,7 +41,6 @@ Route::get('/Tontine', function () {
 })->name('Tontine.index');
 
 Route::get('/credits', [CreditController::class, 'index'])->name('credits.index');
-
 
 
 Route::get('/entrepreneur', function () {
@@ -106,3 +110,11 @@ Route::post('/register', [RegisterController::class, 'store'])->name('register.s
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [LoginController::class, 'login']);
 Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
+Route::get('/notre-mission', [MissionController::class, 'index'])->name('mission.index');
+
+Route::get('/nos-valeurs', [ValueController::class, 'index'])->name('values.index');
+
+
+Route::get('/depot', [DepotController::class, 'index'])->name('depot.index');
+Route::get('/epargne-education', [EpargneController::class, 'education'])->name('epargne.education');
+Route::get('/epargne-logement', [LogementController::class, 'logement'])->name('epargne.logement');

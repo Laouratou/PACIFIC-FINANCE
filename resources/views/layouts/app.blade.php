@@ -60,34 +60,7 @@
 <body>
 <main class="py-4">
     @yield('content')
-    <div class="boxed_wrapper ltr">
-        <!-- preloader -->
-        <div class="loader-wrap">
-            <div class="preloader">
-                <div class="preloader-close">close</div>
-                <div id="handle-preloader" class="handle-preloader">
-                    <div class="animation-preloader">
-                        <div class="spinner"></div>
-                        <div class="txt-loading">
-                            <span data-text-preloader="P" class="letters-loading">P</span>
-                            <span data-text-preloader="a" class="letters-loading">a</span>
-                            <span data-text-preloader="c" class="letters-loading">c</span>
-                            <span data-text-preloader="i" class="letters-loading">i</span>
-                            <span data-text-preloader="f" class="letters-loading">f</span>
-                            <span data-text-preloader="i" class="letters-loading">i</span>
-                            <span data-text-preloader="q" class="letters-loading">q</span>
-                            <span data-text-preloader="f" class="letters-loading">f</span>
-                            <span data-text-preloader="i" class="letters-loading">i</span>
-                            <span data-text-preloader="n" class="letters-loading">n</span>
-                            <span data-text-preloader="a" class="letters-loading">a</span>
-                            <span data-text-preloader="n" class="letters-loading">n</span>
-                            <span data-text-preloader="c" class="letters-loading">c</span>
-                            <span data-text-preloader="e" class="letters-loading">e</span>
-                        </div>
-                    </div>  
-                </div>
-            </div>
-        </div>
+   
         @if ($errors->any())
     <div class="alert alert-danger">
         <ul>

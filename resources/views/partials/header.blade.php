@@ -1,8 +1,5 @@
 <!-- switcher menu -->
 <div class="switcher">
-    {{-- <div class="switch_btn">
-                <button><i class="fas fa-palette"></i></button>
-            </div> --}}
     <div class="switch_menu">
         <!-- color changer -->
         <div class="switcher_container">
@@ -26,7 +23,7 @@
         </div>
     </div>
 </div>
-<!-- end switcher menu -->
+
 <!-- main header -->
 <header class="main-header">
     <!-- header-top -->
@@ -34,15 +31,8 @@
         <div class="large-container">
             <div class="top-inner">
                 <ul class="links-list clearfix">
-                    {{-- <li>
-                        <img src="assets/images/resource/burkina.jpg" alt="Burkina Faso" style="width: 50px;">
-                    </li>
-                    <li>
-                        <img src="assets/images/resource/cote (1).jpg" alt="Côte d'Ivoire" style="width: 50px;">
-                    </li> --}}
                     <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f" style="font-size: 1.3rem;"></i></a></li>
                     <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram" style="font-size: 1.3rem;"></i></a></li>
-
                 </ul>
                 <ul class="info-list clearfix">
                     <li>
@@ -58,20 +48,17 @@
         </div>
     </div>
 
-
-
     <!-- header-lower -->
     <div class="header-lower">
         <div class="large-container">
             <div class="outer-box">
-                <div class="">
+                <div>
                     <div class="shape"></div>
-                <figure class="logo">
-    <a href="index.html">
-        <img src="{{ asset('assets/images/banner/logo (5).jpg') }}" alt="Logo" style="object-fit: cover; width: 100px; height: 100px;">
-    </a>
-</figure>
-
+                    <figure class="logo">
+                        <a href="index.html">
+                            <img src="{{ asset('assets/images/banner/logo (5).jpg') }}" alt="Logo" style="object-fit: cover; width: 100px; height: 100px;">
+                        </a>
+                    </figure>
                 </div>
                 <div class="menu-area">
                     <!--Mobile Navigation Toggler-->
@@ -94,65 +81,72 @@
                                     </ul>
                                 </li>
 
-                                <!-- Particuliers -->
-                                <li class="{{ request()->is('particuliers') ? 'current ' : '' }}">
-                                    <a href="{{ route('particuliers.index') }}">Particuliers</a>
-                                </li>
-                                <li class="{{ request()->is('Entreprises') ? 'current ' : '' }}">
-                                    <a href="{{ route('Entreprises') }}">Entreprises</a>
-                                </li>
-
-                                <!-- Nos services -->
-                                {{-- <li class="{{ request()->is('services*') ? 'current dropdown' : '' }}">
-                                <a href="#">Entreprises</a>
-                                <ul>
-                                    <li><a href="{{ url('service.html') }}">Engagements par signature</a></li>
-                                    <li><a href="{{ url('service-2.html') }}">Our Services 2</a></li>
-                                    <li><a href="{{ url('service-details.html') }}">Digital Banking</a></li>
-                                    <li><a href="{{ url('service-details-2.html') }}">Mobile & Web Banking</a></li>
-                                    <!-- ... autres services -->
-                                </ul>
-                                </li> --}}
-
-                                <!-- Actualités -->
-                                <li class="{{ Route::currentRouteName() == 'news.index' ? 'current' : '' }}">
-                                    <a href="{{ route('news.index') }}">Actualités</a>
-                                </li>
-
-                                {{-- <li class="{{ request()->is('actualites*') ? 'current dropdown' : '' }}">
-                                <a href="#">Actualités</a>
-                                <ul>
-                                    <li class="dropdown">
-                                        <a href="#">Directors</a>
-                                        <ul>
-                                            <li><a href="{{ url('team.html') }}">Board of Directors</a></li>
-                                            <li><a href="{{ url('team-details.html') }}">Director Details</a></li>
-                                        </ul>
-                                    </li>
-                                    <!-- Autres sous-menus pour Actualités -->
-                                </ul>
-                                </li> --}}
-
-                                <li class="dropdown"><a href="index.html">Présentations</a>
-                                    <ul>
-                                        <li><a href="service.html">Mot du DIRECTEUR GENERAL</a></li>
-                                      
-                                        <li><a href="service-details.html">Nos agences</a></li>
-                                        {{-- <li><a href="service-details-2.html">Mobile & Web Banking</a></li>
-                                        <li><a href="service-details-3.html">Insurance Policies</a></li>
-                                        <li><a href="service-details-4.html">Home & Property Loan</a></li>
-                                        <li><a href="service-details-5.html">All Bank Account</a></li>
-                                        <li><a href="service-details-6.html">Borrowing Accounts</a></li>
-                                        <li><a href="service-details-7.html">Private Banking</a></li>
-                                        <li><a href="service-details-8.html">Fixed Term Account</a></li> --}}
+                                <!-- Pacifique Finance -->
+                                <li class="nav-item dropdown {{ request()->is('particuliers') ? 'current' : '' }}">
+                                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Pacifique Finance
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="{{ route('particuliers.index') }}">Mot du directeur</a></li>
+                                        <li><a class="dropdown-item" href="{{ route('particuliers.index') }}">Historique</a></li>
+                                        <li><a class="dropdown-item" href="{{ route('mission.index') }}">Notre mission</a></li>
+                                        <li><a class="dropdown-item" href="{{ route('values.index') }}">Notre valeur</a></li>
                                     </ul>
                                 </li>
 
+                                <!-- Nos Produits -->
+                                <li class="nav-item dropdown {{ request()->is('Entreprises') ? 'current' : '' }}">
+    <a class="nav-link" href="#" id="dropdownProducts" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Nos produits
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="dropdownProducts">
+        <li><a class="dropdown-item" href="{{ route('credits.index') }}">Crédits</a></li>
+        <!-- Sous-menu "Épargne" -->
+        <li class="nav-item dropdown">
+            <a class="dropdown-item dropdown-toggle" href="#" id="dropdownEpargne" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Épargne
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownEpargne">
+                <li><a class="dropdown-item" href="{{ route('depot.index') }}">Dépot à terme (DAT)</a></li>
+                <li><a class="dropdown-item" href="{{ route('epargne.education') }}">Épargne Educatif</a></li>
+                <li><a class="dropdown-item" href="{{ route('epargne.logement') }}">Épargne logement</a></li>
+                <li><a class="dropdown-item" href="#">Épargne Projet</a></li>
+            </ul>
+        </li>
+    </ul>
+</li>
 
-                                <!-- Contact -->
-                                {{-- <li class="{{ request()->is('contact') ? 'current' : '' }}">
-                                <a href="{{ url('contact.html') }}">Présentations</a>
-                                </li> --}}
+                                <!-- Nos Services -->
+                                <!-- Nos Services -->
+<li class="nav-item dropdown {{ request()->is('Particuliers') ? 'current' : '' }}">
+    <a class="nav-link" href="#" id="dropdownServices" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Nos services
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end w-auto" aria-labelledby="dropdownServices">
+     
+        <!-- Sous-menu "Engagement par signature" -->
+        <li class="nav-item dropdown">
+    <a class="dropdown-item dropdown-toggle" href="#" id="dropdownEngagement" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Engagement par signature
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="dropdownEngagement">
+        <li><a class="dropdown-item" href="#">Caution\garantie de soumission</a></li>
+        <li><a class="dropdown-item" href="#">Caution\garantie de Demarrage d'avance</a></li>
+        <li><a class="dropdown-item" href="#">Caution\garantie de bonne fin d'exécution</a></li>
+    </ul>
+</li>
+
+
+        <li><a class="dropdown-item" href="#">Tontines</a></li>
+        <li><a class="dropdown-item" href="#">Education financière</a></li>
+        <li><a class="dropdown-item" href="#">Autres services</a></li>
+    </ul>
+</li>
+
+                                <!-- Nous rejoindre -->
+                                <li class="{{ Route::currentRouteName() == 'news.index' ? 'current' : '' }}">
+                                    <a href="{{ route('news.index') }}">Nous rejoindre</a>
+                                </li>
                             </ul>
                         </div>
                     </nav>
@@ -160,18 +154,17 @@
                     <div class="menu-right-content ml_70">
                         <a href="{{ route('login') }}" class="theme-btn btn-two mr_20">Se connecter</a>
                         <a href="{{ route('register.create') }}" class="theme-btn btn-one">Se créer un compte</a>
-
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!--sticky Header-->
+    <!-- Sticky Header -->
     <div class="sticky-header">
         <div class="large-container">
             <div class="outer-box">
-                <div class="">
+                <div>
                     <div class="shape"></div>
                     <figure class="logo"><a href="index.html"><img src="{{ asset('assets/images/banner/logo (5).jpg') }}" alt="" style="object-fit: cover;width:100px;height:100px;"></a></figure>
                 </div>
@@ -188,11 +181,10 @@
         </div>
     </div>
 
-    <!-- Mobile Menu  -->
+    <!-- Mobile Menu -->
     <div class="mobile-menu">
         <div class="menu-backdrop"></div>
         <div class="close-btn"><i class="fas fa-times"></i></div>
-
         <nav class="menu-box">
             <div class="nav-logo"><a href="index.html"><img src="{{ asset('assets/images/banner/logo (5).jpg') }}" alt="" title="Pacific-finance"></a></div>
             <div class="menu-outer"></div>
@@ -214,9 +206,7 @@
                 </ul>
             </div>
         </nav>
-    </div><!-- End Mobile Menu -->
-
-
-
+    </div>
+    <!-- End Mobile Menu -->
 </header>
-<!-- main-header end -->
+

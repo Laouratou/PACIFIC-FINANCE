@@ -2,7 +2,36 @@
 
 
 @section('content')
-
+<div class="boxed_wrapper ltr">
+        <!-- preloader -->
+        <div class="loader-wrap">
+            <div class="preloader">
+                <div class="preloader-close">close</div>
+                <div id="handle-preloader" class="handle-preloader">
+                    <div class="animation-preloader">
+                        <div class="spinner"></div>
+                        <div class="txt-loading">
+                            <span data-text-preloader="P" class="letters-loading">P</span>
+                            <span data-text-preloader="a" class="letters-loading">a</span>
+                            <span data-text-preloader="c" class="letters-loading">c</span>
+                            <span data-text-preloader="i" class="letters-loading">i</span>
+                            <span data-text-preloader="f" class="letters-loading">f</span>
+                            <span data-text-preloader="i" class="letters-loading">i</span>
+                            <span data-text-preloader="q" class="letters-loading">q</span>
+                            <span data-text-preloader="q" class="letters-loading">u</span>
+                            <span data-text-preloader="q" class="letters-loading">e</span>
+                            <span data-text-preloader="f" class="letters-loading">f</span>
+                            <span data-text-preloader="i" class="letters-loading">i</span>
+                            <span data-text-preloader="n" class="letters-loading">n</span>
+                            <span data-text-preloader="a" class="letters-loading">a</span>
+                            <span data-text-preloader="n" class="letters-loading">n</span>
+                            <span data-text-preloader="c" class="letters-loading">c</span>
+                            <span data-text-preloader="e" class="letters-loading">e</span>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
 <!-- page-direction -->
 <div class="page_direction">
     {{-- <div class="demo-rtl direction_switch"><button class="rtl">RTL</button></div> --}}
@@ -19,7 +48,7 @@
         <div class="slide-item p_relative">
             <div class="bg-layer" style="background-image: url(assets/images/banner/banner-4.jpg);"></div>
             <div class="pattern-layer">
-                <div class="pattern-1" style="background-image: url(assets/images/banner/banner-3.jpg);"></div>
+                <!-- <div class="pattern-1" style="background-image: url(assets/images/banner/banner-3.jpg);"></div> -->
                 <div class="pattern-2" style="background-image: url(assets/images/banner/banner-6.jpg);"></div>
             </div>
             <div class="auto-container">
@@ -97,43 +126,106 @@
 <!-- banner-section end -->
 
 <!-- feature-section -->
+
 <section class="feature-section">
+        <div class="container py-5">
+            <h2 class="text-center fw-bold mb-5">Nos produits et services proposés</h2>
+            <div class="row g-4">
+                <!-- Carte 1 -->
+                <div class="col-md-6 col-lg-6">
+                    <a href="#" class="text-decoration-none">
+                        <div class="card text-center border-0 shadow-sm h-100 p-4">
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <i class="fa-solid fa-credit-card fs-1" style="color: #2C6EA8;"></i>
+                                </div>
+                                <h5 class="card-title fw-bold" style="color: #2C6EA8;">Crédit</h5>
+                                <p class="card-text text-muted">
+                                    Le crédit TPE à partir de 100 000 FCFA et le crédit PME jusqu’à 100 millions de FCFA. Être Burkinabè, résider au Burkina Faso et avoir au moins une année d’existence dans un local.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Carte 2 -->
+                <div class="col-md-6 col-lg-6">
+                    <a href="#" class="text-decoration-none">
+                        <div class="card text-center border-0 shadow-sm h-100 p-4">
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <i class="fa-solid fa-chart-line fs-1" style="color: #2C6EA8;"></i>
+                                </div>
+                                <h5 class="card-title fw-bold" style="color: #2C6EA8;">Produits d’Épargne</h5>
+                                <p class="card-text text-muted">
+                                    ACEP Burkina offre les types d’épargne tels que : le Dépôt à Terme (DAT), l’Épargne Education, l’Épargne Projet, l’Épargne logement, l’Épargne libre.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Carte 3 -->
+                <div class="col-md-6 col-lg-6">
+                    <a href="#" class="text-decoration-none">
+                        <div class="card text-center border-0 shadow-sm h-100 p-4">
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <i class="fa-solid fa-file-signature fs-1" style="color: #2C6EA8;"></i>
+                                </div>
+                                <h5 class="card-title fw-bold" style="color: #2C6EA8;">Engagement par signature</h5>
+                                <p class="card-text text-muted">
+                                    Découvrez notre engagement pour soutenir vos projets par signature avec une offre adaptée à vos besoins.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Carte 4 -->
+                <div class="col-md-6 col-lg-6">
+                    <a href="#" class="text-decoration-none">
+                        <div class="card text-center border-0 shadow-sm h-100 p-4">
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <i class="fa-solid fa-shield-alt fs-1" style="color: #2C6EA8;"></i>
+                                </div>
+                                <h5 class="card-title fw-bold" style="color: #2C6EA8;">Tontines</h5>
+                                <p class="card-text text-muted">
+                                    Nos autres services incluent des solutions financières innovantes pour vos besoins quotidiens et professionnels.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- feature-section end -->
+
+<section class="subscribe-section">
+    <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-5.png);"></div>
     <div class="auto-container">
-        <div class="inner-container clearfix wow fadeInLeft animated" data-wow-delay="00ms" data-wow-duration="1500ms">
-            <div class="feature-block-one">
-                <div class="inner-box">
-                    <div class="icon-box"><i class="icon-5"></i></div>
-                    <h4>Épargne (Particuliers et Entreprises)</h4>
-                    <p>Pacific Finance, vous offre l’opportunité de planifier et de mieux gérer vos revenus à travers un compte d’épargne.</p>
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12 col-sm-12 text-column">
+                <div class="text-box">
+                    <h2>Des questions ou suggestions ?</h2>
                 </div>
             </div>
-            <div class="feature-block-one">
-                <div class="inner-box">
-                    <div class="icon-box"><i class="icon-6"></i></div>
-                    <h4>Tontine (Particuliers )</h4>
-                    <p>Épargnez par jour, sans quittez un instant votre clientèle. Nos collecteurs vous facilitent la tâche en vous rejoignant dans votre lieu de commerce. </p>
-                </div>
-            </div>
-            <div class="feature-block-one">
-                <div class="inner-box">
-                    <div class="icon-box"><i class="icon-7"></i></div>
-                    <h4>Crédit (Particuliers et Entreprises)</h4>
-                    <p>L’accès au financement est un outil, un moyen de développement social et économique.</p>
-                </div>
-            </div>
-            <div class="feature-block-one">
-                <div class="inner-box">
-                    <div class="icon-box"><i class="icon-8"></i></div>
-                    <h4>Engagements par signature (Entreprises)</h4>
-                    <p>A Pacific Finance, nous nous engageons à soulager la trésorerie de nos clients en nous substituant à eux.</p>
+            <div class="col-lg-6 col-md-12 col-sm-12 form-column">
+                <div class="form-inner ml_40">
+                    <form id="whatsapp-form">
+                        <div class="form-group">
+                            <button type="button" class="theme-btn btn-two" id="whatsapp-submit" style="width: auto;">
+                                <span style="color: #25D366; margin-right: 8px;">
+                                    <i class="fab fa-whatsapp"></i> 
+                                </span>
+                                Contactez-nous
+                            </button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!-- feature-section end -->
-
-
 <!-- news-section -->
 <section class="news-style-two pb_90 py-5">
     <div class="pattern-layer">
@@ -250,7 +342,7 @@
                         <div class="content-box">
                             <div class="sec-title mb_50">
                                 <h6>Calculer le prêt</h6>
-                                <h2>Calculateur EMI en ligne</h2>
+                                <h2>Simulateur</h2>
                             </div>
                             <div class="calculator-inner">
                                 <form id="loan-form">
@@ -302,224 +394,66 @@
 </section>
 <!-- calculator-section end -->
 
-<section class="video-section container-fluid auto-container pb_50 py-5">
-    <div class="row no-gutters align-items-stretch">
-
-        <!-- Player de la vidéo principale -->
-        <div class="col-lg-7 col-md-8 p-0">
-            <div class="video-player shadow">
-                <div class="embed-responsive embed-responsive-16by9">
-                    @if ($videos->count() > 0)
-                        <iframe id="main-video" class="embed-responsive-item" src="{{ str_replace('watch?v=', 'embed/', $videos[0]->youtube_url) }}" allowfullscreen></iframe>
-                    @else
-                        <p>Aucune vidéo disponible.</p>
-                    @endif
+<section class="subscribe-section">
+    <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-5.png);"></div>
+    <div class="auto-container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12 col-sm-12 text-column">
+                <div class="text-box">
+                    <h2>Des questions ou suggestions ?</h2>
                 </div>
             </div>
-        </div>
-
-        <!-- Liste des vidéos -->
-        <div class="col-lg-5 col-md-4 p-0">
-            <div class="video-list bg-light p-3">
-                <div class="playlist-title mb-3">
-                    <h2 class="text-center">Espace Vidéos</h2>
-                </div>
-                <div class="video-items">
-                    @foreach ($videos as $video)
-                        <div class="video-item d-flex align-items-center mb-3 border-bottom pb-2" data-video="{{ str_replace('watch?v=', 'embed/', $video->youtube_url) }}">
-                            <img src="https://img.youtube.com/vi/{{ explode('=', $video->youtube_url)[1] }}/0.jpg" alt="{{ $video->title }}" class="img-thumbnail rounded" style="width: 80px;">
-                            <div class="video-info ml-3">
-                                <h5 class="mb-0">{{ $video->title }}</h5>
-                                {{-- <span>Durée : 2:11</span> --}}
-                            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 form-column">
+                <div class="form-inner ml_40">
+                    <form id="whatsapp-form">
+                        <div class="form-group">
+                            <button type="button" class="theme-btn btn-two" id="whatsapp-submit" style="width: auto;">
+                                <span style="color: #25D366; margin-right: 8px;">
+                                    <i class="fab fa-whatsapp"></i> 
+                                </span>
+                                Contactez-nous
+                            </button>
                         </div>
-                    @endforeach
+                    </form>
                 </div>
             </div>
         </div>
     </div>
 </section>
-
-
-<style>
-    /* Conteneur vidéo */
-    .video-section .row {
-        margin-right: 0;
-        margin-left: 0;
-    }
-
-    .video-section .video-player iframe {
-        width: 100%;
-        height: 100%;
-        /* S'adapte à la hauteur du parent */
-    }
-
-    .video-section .video-list {
-        max-height: 500px;
-        overflow-y: auto;
-        border-left: 1px solid #e6e6e6;
-    }
-
-    .video-section .video-item {
-        cursor: pointer;
-        transition: background-color 0.3s;
-    }
-
-    .video-section .video-item:hover {
-        background-color: #f7f7f7;
-    }
-
-    .video-section .video-item img {
-        width: 80px;
-        height: 60px;
-    }
-
-    .video-section .video-info h5 {
-        font-size: 14px;
-        margin-bottom: 0;
-    }
-
-    .video-section .video-info span {
-        font-size: 12px;
-        color: gray;
-    }
-
-    .video-section .col-lg-9,
-    .video-section .col-lg-3 {
-        padding-right: 0;
-        padding-left: 0;
-    }
-
-    .shadow {
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-</style>
-
-<!-- JS pour changer la vidéo -->
-<script>
-    document.querySelectorAll('.video-item').forEach(item => {
-        item.addEventListener('click', function() {
-            const videoUrl = this.getAttribute('data-video');
-            document.getElementById('main-video').src = videoUrl;
-        });
-    });
-
-</script>
-
-
-
-
-<!-- video-section end -->
-{{-- faire un br --}}
-<br>
-<br>
 <!-- service-section -->
-<section class="service-section pt_50 pb_90">
-    <div class="bg-layer" style="background-image: url(assets/images/background/service-bg.jpg);"></div>
+<section class="partners-section pt_50 pb_90">
     <div class="auto-container">
         <div class="sec-title centred mb_60">
-            {{-- <h6>Nos partenaires</h6> --}}
-            <h2>Nos partenaires à portée de main</h2>
+            <h2>Nos partenaires</h2>
         </div>
-        <div class="row clearfix">
-            <div class="col-lg-3 col-md-6 col-sm-12 service-block">
-                <div class="service-block-one wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
-                    <div class="inner-box">
-                        <div class="shape"></div>
-                        <div class="icon-box"><i class="icon-12"></i></div>
-                        <h4><a href="service-details.html">Digital Banking</a></h4>
-                        <ul class="list-item clearfix">
-                            <li>Bank & savings accounts</li>
-                            <li>Credit cards</li>
-                            <li>Personal loans</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 service-block">
-                <div class="service-block-one wow fadeInUp animated" data-wow-delay="300ms" data-wow-duration="1500ms">
-                    <div class="inner-box">
-                        <div class="shape"></div>
-                        <div class="icon-box"><i class="icon-13"></i></div>
-                        <h4><a href="service-details-2.html">Mobile & Web Banking</a></h4>
-                        <ul class="list-item clearfix">
-                            <li>Instant Access</li>
-                            <li>Savings Fixed Term</li>
-                            <li>Savings Instant</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 service-block">
-                <div class="service-block-one wow fadeInUp animated" data-wow-delay="600ms" data-wow-duration="1500ms">
-                    <div class="inner-box">
-                        <div class="shape"></div>
-                        <div class="icon-box"><i class="icon-14"></i></div>
-                        <h4><a href="service-details-3.html">Insurance Policies</a></h4>
-                        <ul class="list-item clearfix">
-                            <li>Pet insurance</li>
-                            <li>Transport Insurance</li>
-                            <li>Accident insurance</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 service-block">
-                <div class="service-block-one wow fadeInUp animated" data-wow-delay="900ms" data-wow-duration="1500ms">
-                    <div class="inner-box">
-                        <div class="shape"></div>
-                        <div class="icon-box"><i class="icon-15"></i></div>
-                        <h4><a href="service-details-4.html">Home & Property Loan</a></h4>
-                        <ul class="list-item clearfix">
-                            <li>Residential Mortgages</li>
-                            <li>Buy-to-let Mortgages</li>
-                            <li>Building Mortgages</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        <div class="partners-logos" style="display: flex; justify-content: center; align-items: center; gap: 40px; flex-wrap: wrap;">
+            <div class="partner-logo" style="flex: 0 1 auto;">
+            <img src="/img/partenaire_1.png" alt="Partenaire 1" style="max-width: 120px; height: auto;">
 
+            </div>
+            <div class="partner-logo" style="flex: 0 1 auto;">
+            <img src="/img/partenaire_2.png" alt="Partenaire 1" style="max-width: 120px; height: auto;">
 
+            </div>
+            <div class="partner-logo" style="flex: 0 1 auto;">
+            <img src="/img/téléchargement.png" alt="Partenaire 1" style="max-width: 120px; height: auto;">
+
+            </div>
+            <div class="partner-logo" style="flex: 0 1 auto;">
+            <img src="/img/partenaire_3.png" alt="Partenaire 1" style="max-width: 120px; height: auto;">
+
+            </div>
+            <div class="partner-logo" style="flex: 0 1 auto;">
+            <img src="/img/partenaire_6.jpg" alt="Partenaire 6" style="max-width: 120px; height: auto;">
+
+            </div>
+           
         </div>
     </div>
 </section>
 <!-- service-section end -->
 <!-- funfact-section -->
-<section class="funfact-section">
-    <div class="auto-container">
-        <div class="inner-container clearfix">
-            <div class="funfact-block-one">
-                <div class="inner-box">
-                    <div class="icon-box"><i class="icon-21"></i></div>
-                    <div class="count-outer count-box">
-                        <span class="count-text" data-speed="1500" data-stop="50">0</span><span>k+</span>
-                    </div>
-                    <p>Clients satisfaits</p>
-                </div>
-            </div>
-            <div class="funfact-block-one">
-                <div class="inner-box">
-                    <div class="icon-box"><i class="icon-22"></i></div>
-                    <div class="count-outer count-box">
-                        <span class="count-text" data-speed="1500" data-stop="90">0</span><span>milliards</span>
-                    </div>
-                    <p>de transactions au total</p>
-                </div>
-            </div>
-            <div class="funfact-block-one">
-                <div class="inner-box">
-                    <div class="icon-box"><i class="icon-23"></i></div>
-                    <div class="count-outer count-box">
-                        <span class="count-text" data-speed="1500" data-stop="40">0</span><span>+</span>
-                    </div>
-                    <p>Filiales en Afrique</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- funfact-section end -->
+
 
 
 <!-- apps-section -->
@@ -568,64 +502,7 @@
 <!-- apps-section end -->
 
 
-<!-- testimonial-section -->
-<section class="testimonial-section centred pt_80 pb_80">
-    <div class="bg-layer" style="background-image: url(assets/images/background/testimonial-bg.jpg);"></div>
-    <div class="auto-container">
-        <div class="sec-title mb_70">
-            <h6>Témoignages</h6>
-            <h2>L'amour de nos clients</h2>
-        </div>
-        <div class="three-item-carousel owl-carousel owl-theme owl-dots-none owl-nav-none">
-            <div class="testimonial-block-one">
-                <div class="inner-box">
-                    <figure class="thumb-box"><img src="assets/images/banner/banner-3.jpg" alt=""></figure>
-                    <h4>Sandra Bullock</h4>
-                    <span class="designation">Manager</span>
-                    <ul class="rating mb_6 clearfix">
-                        <li><i class="icon-26"></i></li>
-                        <li><i class="icon-26"></i></li>
-                        <li><i class="icon-26"></i></li>
-                        <li><i class="icon-26"></i></li>
-                        <li><i class="icon-26"></i></li>
-                    </ul>
-                    <p>“Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque etiam nis quis at arcu nunc neque ac integer sit lobortis diam semper nulla duis in blandit.”</p>
-                </div>
-            </div>
-            <div class="testimonial-block-one">
-                <div class="inner-box">
-                    <figure class="thumb-box"><img src="assets/images/banner/avatar.jpg" alt=""></figure>
-                    <h4>Julien Anthor</h4>
-                    <span class="designation">Manager</span>
-                    <ul class="rating mb_6 clearfix">
-                        <li><i class="icon-26"></i></li>
-                        <li><i class="icon-26"></i></li>
-                        <li><i class="icon-26"></i></li>
-                        <li><i class="icon-26"></i></li>
-                        <li><i class="icon-26"></i></li>
-                    </ul>
-                    <p>“Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque etiam nis quis at arcu nunc neque ac integer sit lobortis diam semper nulla duis in blandit.”</p>
-                </div>
-            </div>
-            <div class="testimonial-block-one">
-                <div class="inner-box">
-                    <figure class="thumb-box"><img src="assets/images/resource/testimonial-3.png" alt=""></figure>
-                    <h4>Rolier Demonil</h4>
-                    <span class="designation">Manager</span>
-                    <ul class="rating mb_6 clearfix">
-                        <li><i class="icon-26"></i></li>
-                        <li><i class="icon-26"></i></li>
-                        <li><i class="icon-26"></i></li>
-                        <li><i class="icon-26"></i></li>
-                        <li><i class="icon-26"></i></li>
-                    </ul>
-                    <p>“Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque etiam nis quis at arcu nunc neque ac integer sit lobortis diam semper nulla duis in blandit.”</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- testimonial-section end -->
+
 
 
 
